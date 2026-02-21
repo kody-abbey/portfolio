@@ -1,0 +1,130 @@
+:root {
+  --bg: #0f1117;
+  --bg-soft: #161b22;
+  --text: #e6edf3;
+  --text-muted: #9da7b3;
+  --accent: #2bc076;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: system-ui, -apple-system, sans-serif;
+  line-height: 1.6;
+}
+
+main {
+  max-width: 800px; 
+  margin: 80px auto; 
+  padding: 20px;
+}
+
+
+@media (min-width: 768px) {
+  .projects-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+
+.lang-select {
+  margin-top: 0px;
+}
+
+.section {
+  padding: 6rem 1.5rem;
+}
+
+.hero {
+
+}
+
+.hero-title {
+  font-size: 3rem; 
+  margin-bottom: 5px;
+}
+
+.short-intro {
+  font-size: 2rem;
+  margin-top: 0px;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+
+.about {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.intro {
+  line-height: 1.8;
+  font-size: 1.3rem;
+}
+
+.intro + .intro {
+  margin-top: 1.5rem;
+}
+
+.projects {
+
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.card {
+  padding: 1.5rem;
+  border-radius: 12px;
+  background: #1e1e1e;
+  border: 1px solid #333;
+  font-size: 1.4rem;
+}
+
+.skills {
+
+}
+
+.skills-list {
+  font-size: 1.3rem;
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+a:hover {
+  opacity: 0.8;
+}
+
+/* nav bar or hamburger */
+/* PC */
+.nav-bar {
+  display: flex;
+  font-size: 1.5rem;
+  gap: 3rem;
+  margin: 0px;
+  padding: 0px;
+  list-style-type: none;
+  background-color: rgba(102, 103, 117, 0.863);
+}
+
+
+/* footer */
+.footer {
+  background-color: #8d1ccea4;
+  font-size: 1.2rem;
+  color: #e3e5ec;
+}
